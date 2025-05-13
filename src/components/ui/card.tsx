@@ -5,12 +5,11 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
 }
 
-export function Card({ className, children }: CardProps) {
+export function Card({ children }: CardProps) {
   return (
     <div
       className={cn(
-        "rounded-lg border bg-card text-card-foreground shadow-sm",
-        className
+        "rounded-lg border bg-card text-card-foreground shadow-sm"
       )}
     >
       {children}
