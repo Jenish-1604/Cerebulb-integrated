@@ -94,7 +94,11 @@ export default function BlogPost() {
                   href={`/blog/${relatedSlug}`}
                   className="text-blue-600 hover:underline"
                 >
-                  {relatedSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                  {relatedSlug
+  .split('-')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ')
+}
                 </Link>
               ))}
             </div>

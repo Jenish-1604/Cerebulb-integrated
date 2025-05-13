@@ -4,13 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import ServiceImage from "@/components/ServiceImage";
+
 import HeroImage from "@/components/HeroImage";
-import Section, {
-  SectionHeader,
-  SectionHeading,
-  SectionSubheading,
-} from "@/components/Section/section";
+import Section from "@/components/Section/section";
 import { Button } from "@/components/ui/button";
 
 // Type definitions
@@ -21,9 +17,7 @@ interface BaseService {
   children?: React.ReactNode;
 }
 
-interface CloudService extends BaseService {}
-
-interface MobileAppService extends BaseService {}
+// MobileAppService type is not needed as it is identical to BaseService
 
 interface StaffingService extends BaseService {
   image: string;
@@ -45,29 +39,11 @@ interface Job {
   children?: React.ReactNode;
 }
 
-// Cloud Computing Services data
-const cloudServices: CloudService[] = [
-  {
-    id: 1,
-    title: "Infrastructure-as-a-Service (IaaS)",
-    description:
-      "Scalable cloud infrastructure services for your business needs.",
-  },
-  {
-    id: 2,
-    title: "Platform-as-a-Service (PaaS)",
-    description:
-      "Complete development and deployment environment in the cloud.",
-  },
-  {
-    id: 3,
-    title: "Software-as-a-Service (SaaS)",
-    description: "Cloud-based software solutions delivered on demand.",
-  },
-];
+// Cloud Services data
+
 
 // Mobile App Development Services data
-const mobileAppServices: MobileAppService[] = [
+const mobileAppServices: BaseService[] = [
   {
     id: 1,
     title: "Custom Mobile App Development",
@@ -234,7 +210,7 @@ export default function Home() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [slides.length]);
+  }, []);
 
   useEffect(() => {
     // Filter jobs based on search term, job type, and location
@@ -535,17 +511,8 @@ export default function Home() {
       {/* IT Staffing Services Section */}
       <section className="py-5 bg-gray-50">
         <div className="container mx-auto px-4">
-          <Section
-            heading="IT Staffing Service"
-            subheading="We offer a wide range of customized high-quality research-based talent consulting services."
-          >
-            <SectionHeader>
-              <SectionHeading>IT Staffing Service</SectionHeading>
-              <SectionSubheading>
-                We offer a wide range of customized high-quality research-based
-                talent consulting services.
-              </SectionSubheading>
-            </SectionHeader>
+          <Section>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {staffingServices.map((card, index) => (
                 <div

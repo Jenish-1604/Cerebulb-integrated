@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -114,7 +114,11 @@ export function MainNav() {
               )}
 
               {hasDropdown && activeDropdown === item.label && (
-                <div className="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-surface z-50">
+                <div
+                  className={`absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white z-50 transition-all duration-300
+                    ${activeDropdown === item.label ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+                  style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.10)' }}
+                >
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     {item.dropdown?.map((dropdownItem) => (
                       <Link

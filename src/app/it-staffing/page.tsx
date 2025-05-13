@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import { Heading } from '@/components/ui/heading';
 import { Content } from '@/components/ui/content';
 import Section from '@/components/Section/section';
@@ -50,11 +48,19 @@ export default function ITStaffing() {
           </div>
         </div>
 
-        <Section
-          heading="Our Staffing Solutions"
-          subheading="Choose the right staffing solution for your business needs"
-          cards={cards}
-        />
+        <Section>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Our Staffing Solutions</h2>
+          <p className="text-lg text-gray-600 mb-8">Choose the right staffing solution for your business needs</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {cards.map((card, idx) => (
+              <div key={idx} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <img src={card.image} alt={card.title} className="w-32 h-32 mx-auto mb-6" />
+                <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+                <p className="text-gray-600">{card.description}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
       </div>
     </main>
   );

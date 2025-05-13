@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Heading } from "@/components/ui/heading";
 import { Content } from "@/components/ui/content";
+import { Card } from "@/components/Card";
 
 export default function PermanentStaffing() {
   const sections = [
@@ -54,7 +55,7 @@ export default function PermanentStaffing() {
     <main className="container mx-auto py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-12 mb-16">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-12 mb-16 bg-[#30D5C8] rounded-lg shadow-lg p-8">
           <div className="flex-1">
             <Heading className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
               Permanent Staffing Solutions
@@ -84,7 +85,7 @@ export default function PermanentStaffing() {
         {/* Sections Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {filteredSections.map((section, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+            <Card key={index} className="p-6">
               <h3 className="text-xl font-semibold text-slate-800 mb-4">
                 {section.title}
               </h3>
@@ -93,7 +94,7 @@ export default function PermanentStaffing() {
                   <li key={itemIndex}>• {item}</li>
                 ))}
               </ul>
-            </div>
+            </Card>
           ))}
         </div>
         <div className="mb-8 text-right text-gray-500 text-sm pr-2">
@@ -134,9 +135,9 @@ export default function PermanentStaffing() {
             ]
               .filter((step) => step.description.length > 60)
               .map((item) => (
-                <div
+                <Card
                   key={item.step}
-                  className="bg-white p-6 rounded-lg shadow-md text-center"
+                  className="p-6 text-center"
                 >
                   <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     {item.step}
@@ -145,7 +146,8 @@ export default function PermanentStaffing() {
                     {item.title}
                   </h3>
                   <p className="text-gray-600">{item.description}</p>
-                </div>
+                </Card>
+
               ))}
           </div>
         </div>

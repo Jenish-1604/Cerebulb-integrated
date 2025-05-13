@@ -51,7 +51,7 @@ export default function RecruitmentProcessOutsourcing() {
     <main className="container mx-auto py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* About Section */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-16">
+        <div className="bg-[#30D5C8] rounded-lg shadow-lg p-8 mb-16">
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-1/2">
               <div className="relative h-[400px]">
