@@ -17,8 +17,6 @@ interface BaseService {
   children?: React.ReactNode;
 }
 
-// MobileAppService type is not needed as it is identical to BaseService
-
 interface StaffingService extends BaseService {
   image: string;
 }
@@ -38,9 +36,6 @@ interface Job {
   slug: string;
   children?: React.ReactNode;
 }
-
-// Cloud Services data
-
 
 // Mobile App Development Services data
 const mobileAppServices: BaseService[] = [
@@ -519,7 +514,7 @@ export default function Home() {
                   key={index}
                   className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition"
                 >
-                  <img
+                  <Image
                     src={card.image}
                     alt={card.title}
                     className="w-32 h-32 mx-auto mb-6"

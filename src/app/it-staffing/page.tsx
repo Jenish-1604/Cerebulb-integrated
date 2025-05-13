@@ -1,6 +1,7 @@
 import { Heading } from '@/components/ui/heading';
 import { Content } from '@/components/ui/content';
 import Section from '@/components/Section/section';
+import Image from 'next/image';
 
 const staffingServices = [
   {
@@ -54,7 +55,7 @@ export default function ITStaffing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cards.map((card, idx) => (
               <div key={idx} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
-                <img src={card.image} alt={card.title} className="w-32 h-32 mx-auto mb-6" />
+                <Image src={card.image} alt={card.title} width={128} height={128} className="w-32 h-32 mx-auto mb-6" />
                 <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
                 <p className="text-gray-600">{card.description}</p>
               </div>
