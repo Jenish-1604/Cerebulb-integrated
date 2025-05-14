@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Elements -->
+    <circle cx="700" cy="100" r="60" fill="#2196F3" fill-opacity="0.1"/>
+    <circle cx="100" cy="500" r="80" fill="#4CAF50" fill-opacity="0.1"/>
+    
+    <!-- Infinity Loop (CI/CD) -->
+    <path d="M300 250 C400 150, 500 350, 600 250 C500 350, 400 150, 300 250" 
+          stroke="#2196F3" stroke-width="4" fill="none"/>
+    
+    <!-- Gear Icons -->
+    <g transform="translate(350, 200) rotate(45)">
+        <circle cx="0" cy="0" r="40" fill="#1976D2"/>
+        <path d="M-20 0 H20 M0 -20 V20" stroke="white" stroke-width="4"/>
+    </g>
+    
+    <g transform="translate(550, 200) rotate(45)">
+        <circle cx="0" cy="0" r="40" fill="#1976D2"/>
+        <path d="M-20 0 H20 M0 -20 V20" stroke="white" stroke-width="4"/>
+    </g>
+    
+    <!-- Server Racks -->
+    <rect x="250" y="350" width="120" height="150" rx="10" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <rect x="270" y="370" width="80" height="20" rx="5" fill="#BBDEFB"/>
+    <rect x="270" y="400" width="80" height="20" rx="5" fill="#BBDEFB"/>
+    <rect x="270" y="430" width="80" height="20" rx="5" fill="#BBDEFB"/>
+    
+    <!-- Cloud Symbol -->
+    <path d="M500 350 C480 350, 450 340, 450 310 C450 280, 480 270, 500 270 C500 250, 520 230, 550 230 C580 230, 600 250, 600 270 C620 270, 650 280, 650 310 C650 340, 620 350, 600 350 Z" 
+          fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    
+    <!-- Code Symbols -->
+    <text x="520" y="310" font-family="monospace" font-size="24" fill="#1976D2">&lt;/&gt;</text>
+    
+    <!-- Connection Lines -->
+    <path d="M310 300 L490 300" stroke="#2196F3" stroke-width="2" stroke-dasharray="6 4"/>
+    <path d="M550 300 L730 300" stroke="#2196F3" stroke-width="2" stroke-dasharray="6 4"/>
+    
+    <!-- Arrows -->
+    <path d="M480 290 L500 300 L480 310" stroke="#2196F3" stroke-width="2"/>
+    <path d="M720 290 L740 300 L720 310" stroke="#2196F3" stroke-width="2"/>
+</svg> 

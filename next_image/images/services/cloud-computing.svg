@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="cloudGradient">
+            <stop stop-color="#60A5FA" offset="0%"></stop>
+            <stop stop-color="#3B82F6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="deviceGradient">
+            <stop stop-color="#F3F4F6" offset="0%"></stop>
+            <stop stop-color="#E5E7EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle fill="#EFF6FF" cx="600" cy="100" r="50" opacity="0.5"></circle>
+        <circle fill="#DBEAFE" cx="200" cy="500" r="30" opacity="0.5"></circle>
+        <circle fill="#BFDBFE" cx="700" cy="400" r="40" opacity="0.5"></circle>
+        
+        <!-- Main Cloud -->
+        <path d="M350,200 C350,144.771525 394.771525,100 450,100 C489.852814,100 524.352814,121.904932 541.402399,154.271756 C548.956345,150.888575 557.266908,149 566,149 C594.718807,149 618,172.281193 618,201 C618,201.33447 617.994647,201.668062 617.983977,202.000751 C642.906655,207.586029 661,230.054733 661,256.5 C661,287.480064 635.815795,312.770592 604.921956,312.996936 L395.078044,313.003064 C364.184205,312.777408 339,287.480064 339,256.5 C339,230.054733 357.093345,207.586029 382.016023,202.000751 C382.005353,201.668062 382,201.33447 382,201 C382,172.281193 405.281193,149 434,149 C442.733092,149 451.043655,150.888575 458.597601,154.271756 C475.647186,121.904932 510.147186,100 550,100" fill="url(#cloudGradient)"></path>
+        
+        <!-- Devices -->
+        <rect fill="url(#deviceGradient)" x="250" y="350" width="120" height="80" rx="8"></rect>
+        <rect fill="url(#deviceGradient)" x="400" y="350" width="150" height="100" rx="8"></rect>
+        <rect fill="url(#deviceGradient)" x="580" y="350" width="90" height="60" rx="8"></rect>
+        
+        <!-- Connection Lines -->
+        <path d="M310,350 L310,313" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4,4"></path>
+        <path d="M475,350 L475,313" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4,4"></path>
+        <path d="M625,350 L625,313" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4,4"></path>
+        
+        <!-- Device Icons -->
+        <rect fill="#3B82F6" x="285" y="375" width="50" height="30" rx="4"></rect>
+        <rect fill="#3B82F6" x="450" y="385" width="50" height="30" rx="4"></rect>
+        <rect fill="#3B82F6" x="600" y="365" width="50" height="30" rx="4"></rect>
+    </g>
+</svg>

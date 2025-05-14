@@ -517,6 +517,8 @@ export default function Home() {
                   <Image
                     src={card.image}
                     alt={card.title}
+                    width={128}
+                    height={128}
                     className="w-32 h-32 mx-auto mb-6"
                   />
                   <h3 className="text-xl font-semibold mb-2">{card.title}</h3>

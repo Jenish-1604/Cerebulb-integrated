@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="256" cy="256" r="240" fill="#E8F0FE"/>
+    
+    <!-- Business Person Icon -->
+    <path d="M256 120C282.5 120 304 141.5 304 168C304 194.5 282.5 216 256 216C229.5 216 208 194.5 208 168C208 141.5 229.5 120 256 120Z" fill="#4B5563"/>
+    <path d="M368 352C368 300.2 317.8 256 256 256C194.2 256 144 300.2 144 352" stroke="#4B5563" stroke-width="32" stroke-linecap="round"/>
+    
+    <!-- Briefcase -->
+    <path d="M368 392H144C135.2 392 128 384.8 128 376V328C128 319.2 135.2 312 144 312H368C376.8 312 384 319.2 384 328V376C384 384.8 376.8 392 368 392Z" fill="#3B82F6"/>
+    <path d="M320 312V296C320 287.2 312.8 280 304 280H208C199.2 280 192 287.2 192 296V312" stroke="#3B82F6" stroke-width="16"/>
+</svg> 

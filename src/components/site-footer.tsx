@@ -11,7 +11,7 @@ export function SiteFooter() {
           <div>
             <Link href="/">
               <Image
-                src="/cerebulb-footer-logo-white.png"
+                src="/integrated-logo-bg-dark.png"
                 alt="Cerebulb Logo"
                 width={150}
                 height={50}
@@ -20,13 +20,9 @@ export function SiteFooter() {
             </Link>
             <div className="mt-4">
               <p className="font-medium mb-2">Social Media :</p>
-              <Link
-                href="https://linkedin.com"
-                className="inline-block mr-2"
-                aria-label="LinkedIn"
-              >
+              <Link href="https://linkedin.com" className="inline-block">
                 <Image
-                  src="/linkedin-icon.png"
+                  src="/images/linkedin-icon.png"
                   alt="LinkedIn"
                   width={32}
                   height={32}

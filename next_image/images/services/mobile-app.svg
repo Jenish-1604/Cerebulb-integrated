@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="phoneGradient">
+            <stop stop-color="#F3F4F6" offset="0%"></stop>
+            <stop stop-color="#E5E7EB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="appGradient">
+            <stop stop-color="#60A5FA" offset="0%"></stop>
+            <stop stop-color="#3B82F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle fill="#EFF6FF" cx="600" cy="100" r="50" opacity="0.5"></circle>
+        <circle fill="#DBEAFE" cx="200" cy="500" r="30" opacity="0.5"></circle>
+        <circle fill="#BFDBFE" cx="700" cy="400" r="40" opacity="0.5"></circle>
+        
+        <!-- Phone Frame -->
+        <rect fill="url(#phoneGradient)" x="300" y="100" width="200" height="400" rx="20"></rect>
+        <rect fill="#FFFFFF" x="310" y="110" width="180" height="380" rx="16"></rect>
+        
+        <!-- App UI Elements -->
+        <g transform="translate(320, 120)">
+            <!-- Header -->
+            <rect fill="url(#appGradient)" x="0" y="0" width="160" height="60" rx="8"></rect>
+            <circle fill="#FFFFFF" cx="30" cy="30" r="15" opacity="0.8"></circle>
+            <rect fill="#FFFFFF" x="60" y="20" width="80" height="8" rx="4" opacity="0.8"></rect>
+            <rect fill="#FFFFFF" x="60" y="35" width="40" height="8" rx="4" opacity="0.6"></rect>
+            
+            <!-- Content -->
+            <rect fill="#F3F4F6" x="0" y="70" width="160" height="80" rx="8"></rect>
+            <rect fill="url(#appGradient)" x="10" y="80" width="60" height="60" rx="8" opacity="0.8"></rect>
+            <rect fill="#E5E7EB" x="80" y="85" width="70" height="8" rx="4"></rect>
+            <rect fill="#E5E7EB" x="80" y="100" width="50" height="8" rx="4"></rect>
+            
+            <rect fill="#F3F4F6" x="0" y="160" width="160" height="80" rx="8"></rect>
+            <rect fill="url(#appGradient)" x="10" y="170" width="60" height="60" rx="8" opacity="0.8"></rect>
+            <rect fill="#E5E7EB" x="80" y="175" width="70" height="8" rx="4"></rect>
+            <rect fill="#E5E7EB" x="80" y="190" width="50" height="8" rx="4"></rect>
+            
+            <!-- Bottom Navigation -->
+            <rect fill="url(#appGradient)" x="0" y="320" width="160" height="50" rx="8"></rect>
+            <g transform="translate(20, 335)" fill="#FFFFFF">
+                <circle cx="10" cy="10" r="10" opacity="0.8"></circle>
+                <circle cx="60" cy="10" r="10" opacity="0.8"></circle>
+                <circle cx="110" cy="10" r="10" opacity="0.8"></circle>
+            </g>
+        </g>
+        
+        <!-- Phone Button -->
+        <circle fill="#E5E7EB" cx="400" cy="510" r="15"></circle>
+    </g>
+</svg>

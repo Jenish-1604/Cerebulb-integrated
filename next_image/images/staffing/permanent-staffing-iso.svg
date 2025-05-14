@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(100, 50)">
+    <!-- Isometric room -->
+    <path d="M500 300L300 400L100 300L300 200L500 300Z" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+    <path d="M500 300L300 400V200L500 100V300Z" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <path d="M300 400L100 300V100L300 200V400Z" fill="#90CAF9" stroke="#2196F3" stroke-width="2"/>
+    
+    <!-- Furniture -->
+    <path d="M250 280L350 230L400 255L300 305L250 280Z" fill="#64B5F6" stroke="#1E88E5" stroke-width="2"/>
+    <path d="M350 230V180L400 205V255L350 230Z" fill="#42A5F5" stroke="#1E88E5" stroke-width="2"/>
+    
+    <!-- People -->
+    <circle cx="320" cy="250" r="15" fill="#1976D2"/>
+    <circle cx="380" cy="220" r="15" fill="#1976D2"/>
+    <circle cx="280" cy="290" r="15" fill="#1976D2"/>
+    
+    <!-- Documents/Papers -->
+    <path d="M340 260L360 250L380 260L360 270L340 260Z" fill="white" stroke="#1E88E5" stroke-width="1"/>
+    <path d="M320 280L340 270L360 280L340 290L320 280Z" fill="white" stroke="#1E88E5" stroke-width="1"/>
+  </g>
+</svg>
